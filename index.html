@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unheard - Political Insights</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-bullhorn me-2"></i>UNHEARD
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2" href="#subscribe">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold text-white">Unheard Political Perspectives</h1>
+                    <p class="lead text-white">Cutting-edge analysis and commentary on today's political landscape</p>
+                    <a href="#articles" class="btn btn-primary btn-lg mt-3">Read Latest Articles</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Article -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="fw-bold">Featured Article</h2>
+                    <p class="lead text-muted">Our most recent and impactful political analysis</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card shadow-lg">
+                        <img src="1731708718379.png" class="card-img-top" alt="Featured Article">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary">Latest</span>
+                                <small class="text-muted">Published: <span id="current-date"></span></small>
+                            </div>
+                            <h3 class="card-title">The Shifting Paradigm of Global Power Structures</h3>
+                            <p class="card-text">In this comprehensive analysis, we examine how emerging economies are challenging traditional power structures and what this means for international relations in the coming decade.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-outline-primary">Read Full Article</a>
+                                <small class="text-muted">15 min read</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Grid -->
+    <section id="articles" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="fw-bold">Recent Articles</h2>
+                    <p class="lead text-muted">Explore our latest political commentaries</p>
+                </div>
+            </div>
+            <div class="row g-4" id="articles-container">
+                <!-- Articles will be loaded here by JavaScript -->
+            </div>
+            <div class="text-center mt-5">
+                <button id="load-more" class="btn btn-primary">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="360884700378636295.png" alt="About Unheard" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">About Unheard</h2>
+                    <p class="lead">Providing alternative perspectives on political discourse since 2023.</p>
+                    <p>Unheard was founded with the mission to amplify political analysis that challenges mainstream narratives. Our team of experienced analysts and commentators bring decades of combined experience in political science, international relations, and journalism.</p>
+                    <p>We believe in rigorous, fact-based analysis that doesn't shy away from uncomfortable truths. Our content is thoroughly researched and carefully crafted to provide our readers with insights they won't find elsewhere.</p>
+                    <a href="#" class="btn btn-outline-dark mt-3">Learn More About Our Mission</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="subscribe" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-4">Stay Updated</h2>
+                    <p class="lead mb-5">Subscribe to our newsletter to receive the latest political analyses directly in your inbox.</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-dark btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="fw-bold">Get In Touch</h2>
+                    <p class="lead text-muted">Have questions or want to contribute? Reach out to us.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">Contact Information</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <i class="fas fa-envelope me-2 text-primary"></i> contact@unheard.blog
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-phone me-2 text-primary"></i> (123) 456-7890
+                                </li>
+                                <li class="mb-3">
+                                    <i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Political Ave, Insight City, IC 12345
+                                </li>
+                            </ul>
+                            <hr>
+                            <h5 class="card-title mb-4">Follow Us</h5>
+                            <div class="social-links">
+                                <a href="#" class="me-3 text-dark"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="#" class="me-3 text-dark"><i class="fab fa-facebook fa-2x"></i></a>
+                                <a href="#" class="me-3 text-dark"><i class="fab fa-linkedin fa-2x"></i></a>
+                                <a href="#" class="me-3 text-dark"><i class="fab fa-instagram fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="fw-bold mb-4">UNHEARD</h5>
+                    <p>Providing alternative political perspectives and in-depth analysis since 2023.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#articles" class="text-white text-decoration-none">Articles</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-4">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Domestic Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">International Relations</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Political Theory</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Election Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="button">Go</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Unheard. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="btn btn-primary back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
